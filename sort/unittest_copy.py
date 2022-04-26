@@ -32,4 +32,4 @@ if __name__ == '__main__':
     with open(r"./re.txt","w",encoding="utf-8") as f:
         runner = unittest.TextTestRunner(f,descriptions="测试用例执行",verbosity=2)
         runner.run(discover)
-        #结尾增加了一个注释
+        #结尾增加了一个注
