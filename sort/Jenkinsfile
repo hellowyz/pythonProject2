@@ -1,0 +1,12 @@
+pipeline{
+    agent any
+    stages{
+        stage("api_test"){
+            steps{
+                bat 'python manin.py'
+
+            }
+        }
+    }
+}
+# 撒大大
