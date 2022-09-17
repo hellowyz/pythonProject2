@@ -28,7 +28,7 @@ class unitmy(unittest.TestCase):
 if __name__ == '__main__':
     # unittest.main()
     #直接使用discover，使用runner运行器进行测试集
-    # discover = unittest.defaultTestLoader.discover(r"../selenium/", pattern="unittest_copy.py")
-    # with open(r"./re.txt","w",encoding="utf-8") as f:
-    #     runner = unittest.TextTestRunner(f,descriptions="测试用例执行",verbosity=2)
-    #     runner.run(discover)
+    discover = unittest.defaultTestLoader.discover(r"../selenium/", pattern="unittest_copy.py")
+    with open(r"./re.txt","w",encoding="utf-8") as f:
+        runner = unittest.TextTestRunner(f,descriptions="测试用例执行",verbosity=2)
+        runner.run(discover)
